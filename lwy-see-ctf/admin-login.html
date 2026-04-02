@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Portal - Learn With Yuvi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span>&#9763;</span> Learn With Yuvi
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+            <li><a href="bug-bounty.html">Bug Bounty</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="admin-login.html" style="color: var(--accent-green);">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="auth-container">
+            <h2>Authorized Access Only</h2>
+            <form id="adminForm" onsubmit="event.preventDefault(); document.getElementById('otp-section').style.display='block';">
+                <div class="form-group">
+                    <label for="email">Admin Email</label>
+                    <input type="email" id="email" required placeholder="admin.httpyuvii@gmail.com">
+                </div>
+                <button type="submit" class="btn primary">Send OTP</button>
+            </form>
+
+            <form id="otp-section" style="display: none; margin-top: 20px;" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+                <div class="form-group">
+                    <label for="otp">Enter OTP</label>
+                    <input type="text" id="otp" required placeholder="6-digit unique code">
+                </div>
+                <button type="submit" class="btn">Verify &amp; Login</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by <a href="https://in.linkedin.com/in/researcher-yuvi" target="_blank" class="glow-link">Yuvraj Gupta</a> &ndash; Ethical Hacker | Learn With Yuvi</p>
+    </footer>
+    <script src="js/app-core.js"></script>
+</body>
+</html>

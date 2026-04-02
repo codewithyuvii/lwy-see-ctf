@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Learn With Yuvi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .article-card { min-height: 150px; display: flex; flex-direction: column; justify-content: center; text-align: center; }
+        .article-card h3 { color: var(--text-primary); margin-bottom: 0; transition: color 0.3s ease; }
+        .article-card:hover h3 { color: var(--accent-green); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span>&#9763;</span> Learn With Yuvi
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles.html" style="color: var(--accent-green);">Articles</a></li>
+            <li><a href="cyber-security.html">Cyber Security</a></li>
+            <li><a href="bug-bounty.html">Bug Bounty</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="admin-login.html">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="container pb-0" style="padding-bottom: 0;">
+        <h1 class="text-center">Cybersecurity Knowledge Base</h1>
+        <p class="text-center mb-4">Explore our comprehensive guides on ethical hacking and web vulnerabilities.</p>
+    </div>
+
+    <div class="container" style="padding-top: 0;">
+        <div class="card-grid">
+            <a href="#" class="card article-card"><h3>What is Ethical Hacking</h3></a>
+            <a href="#" class="card article-card"><h3>Introduction to Bug Bounty</h3></a>
+            <a href="#" class="card article-card"><h3>Web Application Security Basics</h3></a>
+            <a href="#" class="card article-card"><h3>SQL Injection Explained</h3></a>
+            <a href="#" class="card article-card"><h3>Cross Site Scripting (XSS)</h3></a>
+            <a href="#" class="card article-card"><h3>Authentication Vulnerabilities</h3></a>
+            <a href="#" class="card article-card"><h3>OWASP Top 10</h3></a>
+            <a href="#" class="card article-card"><h3>IDOR Vulnerability</h3></a>
+            <a href="#" class="card article-card"><h3>Password Reset Vulnerabilities</h3></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by <a href="https://in.linkedin.com/in/researcher-yuvi" target="_blank" class="glow-link">Yuvraj Gupta</a> &ndash; Ethical Hacker | Learn With Yuvi</p>
+    </footer>
+    <script src="js/app-core.js"></script>
+</body>
+</html>
